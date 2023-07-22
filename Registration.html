@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBRP Registration | ER:LC</title>
+    <link rel="stylesheet" href="sessions.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="img2">
+        <div class="navi">
+            <img class="logo" src="Borderrpppp.png">
+            <ul>
+                <li><a href="file:///C:/Users/User/Desktop/Border%20Roleplay/index.html#">Home</a></li>
+                <li><a href="file:///C:/Users/User/Desktop/Border%20Roleplay/Registration.html">Register</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Updates</a></li> 
+            </ul>
+        </div>
+        <div class="SignUp">
+            <input class="us1" placeholder="Enter your username" type="text" id="username">
+            <input class="us2" type="text" id="nickname" placeholder="Enter your nickname"><br>
+            <input class="us3" type="password" id="password1" placeholder="Create new password"><br>
+            <input class="us4" type="password" id="password2" placeholder="Approve Password"><br>
+            <button class="btn1" id="btn3">Sign up</button>
+            <p class="txt1">Already have an account? <a class="l1" href="file:///C:/Users/User/Desktop/Border%20Roleplay/login.html">Login</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("btn3").onclick = function() {
+
+            var points = 0;
+
+            if (document.getElementById("username").value == "") {
+                alert("Hmm... There's something wrong, please check format and try again!")
+                points = points + 1
+            }
+
+            if (document.getElementById("password1").value == "") {
+                alert("You must have a password")
+                points = points + 1
+            }
+
+            if (document.getElementById("password2").value != document.getElementById("password1").value) {
+                alert("Passwords Doesn't Match")
+                points = points + 1
+            }
+
+            if (points > 1) {
+                alert("Hmm... There's something wrong, please check format and try again!")
+            }
+            if (points < 1) {
+                alert("Succesfully Logged in Account. Please click Login.")
+            }
+     } 
+    </script>
+</body>
+</html>

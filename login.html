@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBRP Registration | ER:LC</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="img2">
+        <div class="navi">
+            <img class="logo" src="Borderrpppp.png">
+            <ul>
+                <li><a href="file:///C:/Users/User/Desktop/Border%20Roleplay/index.html#">Home</a></li>
+                <li><a href="file:///C:/Users/User/Desktop/Border%20Roleplay/Registration.html">Register</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Updates</a></li> 
+            </ul>
+        </div>
+        <div class="login">
+            <input class="u1" placeholder="Username" type="text" id="username1">
+            <input class="u2" type="password" id="nickname" placeholder="Password0"><br>
+            <button class="btn0" id="btn0">Login</button><br>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("btn0").onclick = function() {
+            if (document.getElementById("username1").value == "") {
+                alert("Username Doesn't Exist.")
+            }
+
+            if (document.getElementById("nickname").value == "") {
+                alert("Password is Incorrect")
+            }
+
+            if (document.getElementById("username1").value != "" && document.getElementById("nickname").value != ""){
+                alert("Succesfully Logged in Account! Click Home to get in main page.")
+            }
+
+            var role;
+
+            if (document.getElementById("nickname").value == "Callum110109") {
+                role.value = "directory"
+            }
+
+            if (document.getElementById("nickname").value == "amassistantdirector") {
+                role.value = "directory"
+            }
+
+            if (document.getElementById("nickname").value == "skibbereencork202") {
+                role.value = "management"
+            }
+
+            if (document.getElementById("nickname").value == "Jake_1212") {
+                role.value = "ownership"
+            }
+
+            if (document.getElementById("nickname").value = "Aa1231231234") {
+                role.value = 1
+            }
+
+            if (role.value = "ownership") {
+                console.log("Hello World");
+            }
+        }
+    </script>
+</body>
+</html>
